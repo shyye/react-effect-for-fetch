@@ -8,13 +8,11 @@ function UsersSection() {
     const res = await fetch('https://boolean-uk-api-server.fly.dev/shyye/contact');
     const data = await res.json();
     setUsers(data);
-    console.log(users);
   }
 
   // Load data
   useEffect(() => {
     getData()
-    console.log(users);
   }, [])
 
   return (

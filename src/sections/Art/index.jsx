@@ -8,13 +8,11 @@ function ArtsSection() {
     const res = await fetch('https://boolean-uk-api-server.fly.dev/art');
     const data = await res.json();
     setArtists(data);
-    console.log(artists);
   }
 
   // Load data
   useEffect(() => {
     getData()
-    console.log(artists);
   }, [])
 
   return (
